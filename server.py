@@ -7,7 +7,7 @@ app = Flask(__name__)
 fb = firebase.FirebaseApplication(
     'https://semantics2-97dc6.firebaseio.com/', None)
 
-cors = CORS(app, resources={r"/*": {"origins": "*"}})
+#cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 
 @app.route('/add-user', methods=['POST'])
